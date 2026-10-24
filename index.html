@@ -1,48 +1,272 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trend Setters | Pinterest Affiliate Automation</title>
-  <meta name="description" content="Trend Setters is a personal tool to prepare and manage product Pins for affiliate marketing.">
-  <style>
-    :root { color-scheme: light; --red: #bd081c; --ink: #202124; --muted: #5f6368; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font: 16px/1.65 Arial, sans-serif; color: var(--ink); background: #f7f7f8; }
-    header { background: linear-gradient(135deg, #bd081c, #690018); color: white; padding: 56px 20px; text-align: center; }
-    header h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3.2rem); }
-    header p { margin: 0; opacity: .95; }
-    main { max-width: 820px; margin: 28px auto; padding: 0 18px; }
-    section { background: white; border-radius: 14px; padding: 26px; margin-bottom: 18px; box-shadow: 0 2px 12px #0000000b; }
-    h2 { margin-top: 0; }
-    a { color: var(--red); }
-    footer { text-align: center; color: var(--muted); padding: 18px; font-size: .92rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trend Setters is an independent personal project for affiliate product research, product ranking, and content preparation.">
+    <meta name="theme-color" content="#102A43">
+    <title>Trend Setters | Affiliate Product Research</title>
+
+    <style>
+        :root {
+            --navy: #102A43;
+            --teal: #12B8A6;
+            --light: #F4F8FB;
+            --text: #243B53;
+            --muted: #627D98;
+            --white: #FFFFFF;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--light);
+        }
+
+        header {
+            background: var(--navy);
+            color: var(--white);
+            border-bottom: 4px solid var(--teal);
+            padding: 18px 6%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .brand {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 16px;
+        }
+
+        .hero {
+            background: var(--navy);
+            color: white;
+            padding: 75px 8%;
+        }
+
+        .hero h1 {
+            max-width: 800px;
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            line-height: 1.15;
+        }
+
+        .hero p {
+            max-width: 750px;
+            color: #D9E8F3;
+            font-size: 1.1rem;
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--teal);
+            color: var(--navy);
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        section {
+            padding: 45px 8%;
+        }
+
+        h2, h3 { color: var(--navy); }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #D9E2EC;
+        }
+
+        .notice {
+            background: #E4F8F5;
+            border-left: 5px solid var(--teal);
+            padding: 22px;
+            border-radius: 8px;
+        }
+
+        a { color: #087F8C; }
+
+        footer {
+            background: var(--navy);
+            color: white;
+            padding: 28px 8%;
+        }
+
+        footer a { color: #7CE7DC; }
+
+        @media (max-width: 700px) {
+            .cards { grid-template-columns: 1fr; }
+            nav { align-items: flex-start; }
+            nav a { margin-left: 0; margin-right: 12px; }
+            .hero { padding: 48px 6%; }
+            section { padding: 35px 6%; }
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Trend Setters</h1>
-    <p>Pinterest Affiliate Marketing Automation</p>
-  </header>
-  <main>
-    <section>
-      <h2>About the project</h2>
-      <p>Trend Setters is a personal software project being developed to help its operator prepare product information and manage product Pins for affiliate marketing.</p>
-      <p>Planned functions may include organizing product names, affiliate destination links, image URLs, board identifiers, and Pin descriptions, and publishing Pins through Pinterest's authorized API when access is available.</p>
+<header>
+    <nav>
+        <a class="brand" href="index.html">TS | Trend Setters</a>
+        <div>
+            <a href="#about">About</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#disclosure">Disclosure</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <p>INDEPENDENT PERSONAL PROJECT</p>
+        <h1>Affiliate Product Research and Content Preparation</h1>
+
+        <p>
+            Trend Setters is a personal Python project that collects,
+            organizes, and ranks product information obtained through
+            an affiliate-program API. It helps its operator compare
+            products and prepare records for potential content workflows.
+        </p>
+
+        <a class="button" href="#workflow">Explore the project</a>
     </section>
-    <section>
-      <h2>How it works</h2>
-      <p>The tool is intended to process product details supplied by its operator. Any Pinterest publishing will require account authorization and the permissions approved by Pinterest. It is not an official Pinterest product and is not endorsed by Pinterest.</p>
+
+    <section id="about">
+        <h2>About Trend Setters</h2>
+
+        <p>
+            The purpose of Trend Setters is to make affiliate product
+            research more organized. The current application runs locally
+            on the operator's computer and saves product information
+            in CSV files for review.
+        </p>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Product Collection</h3>
+                <p>
+                    Retrieve available product titles, prices, images,
+                    product URLs, and commission information from the
+                    affiliate API.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Product Ranking</h3>
+                <p>
+                    Compare available sales-volume indicators, estimated
+                    commission, evaluation data, and discounts to
+                    prioritize products for further review.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Content Preparation</h3>
+                <p>
+                    Organize product details and affiliate URLs for
+                    possible future content workflows. Product data
+                    can change and should be checked before publication.
+                </p>
+            </article>
+        </div>
     </section>
-    <section>
-      <h2>Privacy</h2>
-      <p>Read the <a href="privacy.html">Trend Setters Privacy Policy</a> for information about data handling.</p>
+
+    <section id="workflow">
+        <div class="notice">
+            <h2>Current Functionality</h2>
+
+            <p>
+                The current version collects and ranks affiliate product
+                information locally and exports the results to CSV files.
+            </p>
+
+            <p>
+                <strong>Pinterest publishing is not connected or active.</strong>
+                This website does not currently publish Pins, access
+                Pinterest user accounts, or claim that automated
+                publishing is operational.
+            </p>
+
+            <p>
+                Any future integration will be developed using the
+                relevant authorized API and permissions.
+            </p>
+        </div>
     </section>
-    <section>
-      <h2>Affiliate disclosure</h2>
-      <p>Product Pins created with this tool may contain affiliate links. The operator may earn a commission when a user makes a qualifying purchase through such a link, at no additional cost to the purchaser where applicable.</p>
+
+    <section id="disclosure">
+        <h2>Affiliate Disclosure</h2>
+
+        <p>
+            Some links prepared by this project may be affiliate links.
+            If a qualifying purchase is made through an affiliate link,
+            the operator may earn a commission at no additional cost
+            to the buyer. Commission eligibility and rates depend on
+            the relevant affiliate program.
+        </p>
+
+        <p>
+            Product rankings are based on available data and do not
+            guarantee product quality, sales, conversions, or earnings.
+            Prices, discounts, availability, and commission rates may change.
+        </p>
     </section>
-  </main>
-  <footer>Trend Setters is an independent project. Pinterest is a trademark of its respective owner.</footer>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            For questions about this website or its privacy practices,
+            email:
+            <a href="mailto:zeeshanmursleen0@gmail.com">
+                zeeshanmursleen0@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Trend Setters is an independent project and is not affiliated
+            with, endorsed by, or sponsored by Pinterest or AliExpress.
+            Third-party names are used only to identify relevant services.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Trend Setters — Independent Affiliate Product Research Project</p>
+    <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="mailto:zeeshanmursleen0@gmail.com">Contact</a>
+    </p>
+    <p>Copyright 2026 Trend Setters.</p>
+</footer>
 </body>
 </html>
