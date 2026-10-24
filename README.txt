@@ -1,19 +1,52 @@
-Trend Setters website files
 
-Files:
-- index.html: Website/app information page
-- privacy.html: Privacy policy page
+TREND SETTERS
+=============
 
-How to publish with GitHub Pages:
-1. Sign in to https://github.com/ and create a new PUBLIC repository, for example: trend-setters-site.
-2. Upload index.html and privacy.html to the repository's root (top level).
-3. Open the repository's Settings -> Pages.
-4. Under Build and deployment, choose Deploy from a branch.
-5. Select branch main and folder /(root), then Save.
-6. Wait for GitHub Pages to publish the site.
-7. Your site URL will usually be https://YOUR-GITHUB-USERNAME.github.io/trend-setters-site/
-8. Enter that as Website/App link in Pinterest.
-9. Enter https://YOUR-GITHUB-USERNAME.github.io/trend-setters-site/privacy.html as Privacy Policy link.
+PROJECT PURPOSE
+---------------
+Trend Setters is an independent personal project for collecting,
+organizing, and ranking affiliate product information using Python.
 
-Replace YOUR-GITHUB-USERNAME and trend-setters-site with your actual GitHub username and repository name.
-The policy is a starter template. Ensure it accurately reflects the actual behavior of your app before submitting. Do not claim features or data practices that are not true.
+CURRENT FUNCTIONALITY
+---------------------
+- Collects product information through the AliExpress affiliate API.
+- Organizes product data and affiliate links in CSV files.
+- Calculates comparative product scores from available metrics.
+- Supports local product research and content preparation.
+
+PINTEREST STATUS
+----------------
+Pinterest publishing is not currently connected or active.
+The website does not claim that automated Pinterest publishing
+is operational.
+
+WEBSITE FILES
+-------------
+index.html   Project homepage.
+privacy.html Privacy policy.
+README.txt   Repository documentation.
+
+CONTACT
+-------
+zeeshanmursleen0@gmail.com
+
+SECURITY
+--------
+Do not commit API keys, app secrets, access tokens, .env files,
+or private information to this public repository.
+
+THIRD-PARTY SERVICES
+--------------------
+The project may use GitHub Pages for hosting and the AliExpress
+affiliate API for product information. Each provider has its own
+terms and privacy policy.
+
+Trend Setters is an independent project and is not affiliated with,
+endorsed by, or sponsored by Pinterest or AliExpress.
+
+MAINTENANCE
+-----------
+Keep the website, privacy policy, and application description
+consistent with the actual functionality of the project.
+Update disclosures before introducing new data collection or
+third-party integrations.
